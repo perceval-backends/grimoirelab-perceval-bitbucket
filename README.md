@@ -64,6 +64,14 @@ $ perceval bitbucket libqxt libqxt --category issue -c CLIENT_ID -s SECRET_ID -r
 
 The bitbucket backend can fetch `issue` and `pull_request`.
 
+## Roadmap
+
+- [ ] Fix flake8 errors
+- [ ] Add support for using `username` and `password` for authentication instead of the 3 access tokens, read more about it from [chaoss/grimoirelab-perceval/#/653 (comment)](https://github.com/chaoss/grimoirelab-perceval/pull/653#issuecomment-618886424)
+- [ ] Add [tests](https://github.com/perceval-backends/grimoirelab-perceval-bitbucket/blob/master/tests/test_bitbucket.py)
+- [ ] Start using [Bitergia/release-tools](https://github.com/Bitergia/release-tools)
+- [ ] Publish the package to [PyPI](https://pypi.org/)
+
 ## Contributing
 
 This project follows the [contributing guidelines](https://github.com/chaoss/grimoirelab/blob/master/CONTRIBUTING.md) of the GrimoireLab.
