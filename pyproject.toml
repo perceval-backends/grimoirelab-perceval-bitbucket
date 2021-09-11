@@ -1,0 +1,67 @@
+[tool.poetry]
+name = "perceval-bitbucket"
+version = "0.0.1"
+description = "Perceval backend for Bitbucket."
+authors = [
+    "GrimoireLab Developers"
+]
+license = "GPL-3.0+"
+
+readme = "README.md"
+
+homepage = "https://chaoss.github.io/grimoirelab/"
+repository = "https://github.com/perceval-backends/grimoirelab-perceval-bitbucket"
+
+keywords = [
+    "development",
+    "grimoirelab"
+]
+
+packages = [
+    { include = "perceval" },
+    { include = "tests", format = "sdist" },
+]
+
+include = [
+    "AUTHORS",
+    "LICENSE",
+    "NEWS",
+    "README.md"
+]
+
+classifiers = [
+   "Development Status :: 4 - Beta",
+   "Intended Audience :: Developers",
+   "Intended Audience :: Science/Research",
+   "Topic :: Software Development",
+   "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+   "Programming Language :: Python :: 3"
+]
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/perceval-backends/grimoirelab-perceval-bitbucket/issues"
+
+[tool.poetry.dependencies]
+python = "^3.6.1"
+
+requests = "^2.7.0"
+
+# grimoirelab dependencies
+grimoirelab-toolkit = "*"
+perceval = "*"
+
+[tool.poetry.dev-dependencies]
+httpretty = "1.0.2"
+
+flake8 = "^3.9.2"
+coverage = "^5.5"
+
+# grimoirelab dependencies
+grimoirelab-toolkit = {git = "https://github.com/chaoss/grimoirelab-toolkit.git", rev = "master"}
+perceval = {git = "https://github.com/chaoss/grimoirelab-perceval.git", rev = "master"}
+
+[build-system]
+requires = [
+    "poetry-core>=1.0.0"
+]
+build-backend = "poetry.core.masonry.api"
